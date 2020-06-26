@@ -1,0 +1,8 @@
+body{
+    font-family: product-sans-regular;
+}
+
+@font-face {
+    font-family: 'product-sans-regular';
+    src: URL('Product-Sans-Regular.ttf') format('truetype');
+  }
