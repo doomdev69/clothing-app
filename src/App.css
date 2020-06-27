@@ -6,4 +6,9 @@ body{
 @font-face {
     font-family: 'product-sans-regular';
     src: URL('Product-Sans-Regular.ttf') format('truetype');
-  }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
