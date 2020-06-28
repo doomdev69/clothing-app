@@ -1,6 +1,6 @@
 .custom-button {
     min-width: 165px;
-    width: auto;
+    width: 100%;
     height: 50px;
     letter-spacing: 0.5px;
     line-height: 50px;
@@ -21,12 +21,22 @@
     }
 
     &.google-sign-in{
-        background-color: #4285f4;
+        background-color: #de5246;
         color: white;
         &:hover{
             background-color: white;
-            border: 1px solid #4285f4;
-            color: #4285f4;
+            border: 1px solid #de5246;
+            color: #de5246;
+        }
+    }
+
+    &.twitter-sign-in{
+        background-color: rgb(29, 161, 243);
+        color: white;
+        &:hover{
+            background-color: white;
+            border: 1px solid rgb(29, 161, 243);
+            color: rgb(29, 161, 243);
         }
     }
   }

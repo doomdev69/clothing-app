@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
-import { signInWithGoogle } from '../../firebase/firebase.utils';
+import { signInWithGoogle, signInWithTwitter } from '../../firebase/firebase.utils';
 import './sign-in.styles.scss';
 
 
@@ -50,7 +50,8 @@ class SignIn extends Component {
                     />
                     <div className='buttons'>
                         <CustomButton type='submit' isGoogleSignIn={false}>Sign In</CustomButton>
-                        <CustomButton style={{marginTop: '5px'}} onClick={signInWithGoogle} isGoogleSignIn={true}>Sign In With Google</CustomButton>
+                        <CustomButton style={{marginTop: '5px'}} onClick={signInWithGoogle} isGoogleSignIn={true}>Sign In With Google <i class="fa fa-google" aria-hidden="true"></i></CustomButton>
+                        <CustomButton style={{marginTop: '5px'}} onClick={signInWithTwitter} isTwitterSignIn={true}>Sign In With Twitter <i class="fa fa-twitter" aria-hidden="true"></i></CustomButton>
                     </div>
                     
                 </form>
